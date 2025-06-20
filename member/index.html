@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+  <title>Dashboard | ADUSDT Bank </title>
+  <link rel="icon" type="image/x-icon" href="src/assets/img/favicon.ico" />
+  <link
+    href="layouts/vertical-dark-menu/css/light/loader.css"
+    rel="stylesheet"
+    type="text/css" />
+  <link
+    href="layouts/vertical-dark-menu/css/dark/loader.css"
+    rel="stylesheet"
+    type="text/css" />
+  <script src="layouts/vertical-dark-menu/loader.js"></script>
+
+  <!-- BEGIN GLOBAL MANDATORY STYLES -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:400,600,700"
+    rel="stylesheet" />
+  <link
+    href="src/bootstrap/css/bootstrap.min.css"
+    rel="stylesheet"
+    type="text/css" />
+  <link
+    href="layouts/vertical-dark-menu/css/light/plugins.css"
+    rel="stylesheet"
+    type="text/css" />
+  <link
+    href="layouts/vertical-dark-menu/css/dark/plugins.css"
+    rel="stylesheet"
+    type="text/css" />
+  <!-- END GLOBAL MANDATORY STYLES -->
+
+  <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+  <link
+    href="src/plugins/src/apex/apexcharts.css"
+    rel="stylesheet"
+    type="text/css" />
+  <link
+    href="src/assets/css/light/dashboard/dash_1.css"
+    rel="stylesheet"
+    type="text/css" />
+  <link
+    href="src/assets/css/dark/dashboard/dash_1.css"
+    rel="stylesheet"
+    type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+
+  <style>
+
+  </style>
+</head>
+
+<body class="layout-boxed">
+  <!-- BEGIN LOADER -->
+  <div id="load_screen">
+    <div class="loader">
+      <div class="loader-content">
+        <div class="spinner-grow align-self-center"></div>
+      </div>
+    </div>
+  </div>
+  <!--  END LOADER -->
+
+  <!--  BEGIN NAVBAR  -->
+
+    <style>
+        body.dark {
+            background: #000000;
+        }
+
+        .header-container .theme-brand .theme-logo a img {
+            width: 140px !important;
+            height: auto !important;
+        }
+    </style>
+    <div class="header-container container-xxl">
+        <header class="header navbar navbar-expand-sm expand-header">
+            <ul class="navbar-item theme-brand flex-row text-center">
+                <li class="nav-item theme-logo">
+                    <a href="index.html">
+                        <img src="src/assets/img/logo.png"
+                            class="navbar-logos"
+                            alt="logo" />
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="navbar-item flex-row ms-lg-auto ms-0 action-area">
+                <li class="nav-item theme-toggle-item">
+                    <a href="javascript:void(0);" class="nav-link theme-toggle"> </a>
+                </li>
+
+                <li
+                    class="nav-item dropdown user-profile-dropdown order-lg-0 order-1">
+                    <a
+                        href="javascript:void(0);"
+                        class="nav-link dropdown-toggle user"
+                        id="userProfileDropdown"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                        <div class="avatar-container">
+                            <div class="avatar avatar-sm avatar-indicators avatar-online">
+                                <img
+                                    alt="avatar"
+                                    src="src/assets/img/profile-30.png"
+                                    class="rounded-circle" />
+                            </div>
+                        </div>
+                    </a>
+
+                    <div
+                        class="dropdown-menu position-absolute"
+                        aria-labelledby="userProfileDropdown">
+                        <div class="user-profile-section">
+                            <div class="media mx-auto">
+                                <div class="emoji me-2">&#x1F44B;</div>
+                                <div class="media-body">
+                                    <h5>Shaun Park</h5>
+                                    <p>Project Leader</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="user-profile.html">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-user">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                                <span>Profile</span>
+                            </a>
+                        </div>
+
+                        <div class="dropdown-item">
+                            <a href="auth-boxed-signin.html">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-log-out">
+                                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                    <polyline points="16 17 21 12 16 7"></polyline>
+                                    <line x1="21" y1="12" x2="9" y2="12"></line>
+                                </svg>
+                                <span>Log Out</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </header>
+    </div>
+
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container" id="container">
+        <div class="overlay"></div>
+        <div class="search-overlay"></div>
+
+        <!--  BEGIN SIDEBAR  -->
+        <div class="sidebar-wrapper sidebar-theme">
+            <nav id="sidebar">
+                <div class="navbar-nav theme-brand flex-row text-center">
+                    <div class="nav-logo">
+                        <div class="nav-item theme-logo">
+                            <a href="">
+                                <img
+                                    src="src/assets/img/logo.png"
+                                    class="navbar-logos"
+                                    alt="logo" style="width:250px;">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="nav-item sidebar-toggle">
+                        <div class="btn-toggle sidebarCollapse">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-chevrons-left">
+                                <polyline points="11 17 6 12 11 7"></polyline>
+                                <polyline points="18 17 13 12 18 7"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-bottom"></div>
+                <ul class="list-unstyled menu-categories" id="accordionExample">
+                    <li class="menu active">
+                        <a
+                            href="#dashboard"
+                            data-bs-toggle="collapse"
+                            aria-expanded="true"
+                            class="dropdown-toggle">
+                            <div class="">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-home">
+                                    <path
+                                        d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg>
+                                <span>Dashboard</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="menu">
+                        <a
+                            href="#apps"
+                            data-bs-toggle="collapse"
+                            aria-expanded="false"
+                            class="dropdown-toggle">
+                            <div class="">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-cpu">
+                                    <rect
+                                        x="4"
+                                        y="4"
+                                        width="16"
+                                        height="16"
+                                        rx="2"
+                                        ry="2"></rect>
+                                    <rect x="9" y="9" width="6" height="6"></rect>
+                                    <line x1="9" y1="1" x2="9" y2="4"></line>
+                                    <line x1="15" y1="1" x2="15" y2="4"></line>
+                                    <line x1="9" y1="20" x2="9" y2="23"></line>
+                                    <line x1="15" y1="20" x2="15" y2="23"></line>
+                                    <line x1="20" y1="9" x2="23" y2="9"></line>
+                                    <line x1="20" y1="14" x2="23" y2="14"></line>
+                                    <line x1="1" y1="9" x2="4" y2="9"></line>
+                                    <line x1="1" y1="14" x2="4" y2="14"></line>
+                                </svg>
+                                <span>Incomes</span>
+                            </div>
+                            <div>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul
+                            class="collapse submenu list-unstyled"
+                            id="apps"
+                            data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="referral_income.html"> Referral Income </a>
+                            </li>
+                            <li>
+                                <a href="upgrade_bonus.html"> Upgrade Bonus </a>
+                            </li>
+                            <li>
+                                <a href="level_income.html"> Level Income </a>
+                            </li>
+                            <li>
+                                <a href="dividend_bonus.html"> Dividend Bonus </a>
+                            </li>
+                            <li>
+                                <a href="royalty_income.html"> Royalty Income </a>
+                            </li>
+                            <li>
+                                <a href=""> Reward Fund </a>
+                            </li>
+                            <li>
+                                <a href="./app-contacts.html"> Hold Income </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a
+                            href="#components"
+                            data-bs-toggle="collapse"
+                            aria-expanded="false"
+                            class="dropdown-toggle">
+                            <div class="">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-box">
+                                    <path
+                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                </svg>
+                                <span>My Network</span>
+                            </div>
+                            <div>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul
+                            class="collapse submenu list-unstyled"
+                            id="components"
+                            data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="./component-tabs.html"> My Direct </a>
+                            </li>
+                            <li>
+                                <a href="./component-accordion.html"> My Team </a>
+                            </li>
+                            <li>
+                                <a href="./component-modal.html"> Level Wise Team </a>
+                            </li>
+                            <li>
+                                <a href="./component-cards.html"> Tree View </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a
+                            href="#elements"
+                            data-bs-toggle="collapse"
+                            aria-expanded="false"
+                            class="dropdown-toggle">
+                            <div class="">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-zap">
+                                    <polygon
+                                        points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                </svg>
+                                <span>Support</span>
+                            </div>
+                            <div>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul
+                            class="collapse submenu list-unstyled"
+                            id="elements"
+                            data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="./element-alerts.html"> Support </a>
+                            </li>
+                            <li>
+                                <a href="./element-avatar.html"> Support Response </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a
+                            href="#dashboard"
+                            data-bs-toggle="collapse"
+                            aria-expanded="true"
+                            class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg>
+                                <path
+                                    d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg>
+                                <span>Logout</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--  BEGIN CONTENT AREA  -->
+        <div id="content" class="main-content">
+            <div class="layout-px-spacing">
+                <div class="middle-content container-xxl p-0">
+                    <!--  BEGIN BREADCRUMBS  -->
+                    <div class="secondary-nav">
+                        <div class="breadcrumbs-container" data-page-heading="Analytics">
+                            <header class="header navbar navbar-expand-sm">
+                                <a
+                                    href="javascript:void(0);"
+                                    class="btn-toggle sidebarCollapse"
+                                    data-placement="bottom">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="feather feather-menu">
+                                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                                    </svg>
+                                </a>
+                                <div class="d-flex breadcrumb-content">
+                                    <div class="page-header">
+                                        <div class="page-title"></div>
+
+                                        <nav class="breadcrumb-style-one" aria-label="breadcrumb">
+                                            <ol class="breadcrumb">
+                                                <li class="breadcrumb-item">
+                                                    <a href="#">Dashboard</a>
+                                                </li>
+                                                <li
+                                                    class="breadcrumb-item active"
+                                                    aria-current="page">
+                                                    Analytics
+                                                </li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </header>
+                        </div>
+                    </div>
+                    <style>
+                        .announcement {
+                            background: #0e1726;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 40px;
+                            margin-top: 1px;
+
+                        }
+
+                        .fa-bullhorn {
+                            animation: blinker 2s linear infinite;
+
+                        }
+
+                        @keyframes blinker {
+                            50% {
+                                opacity: 0;
+                            }
+                        }
+                    </style>
+                    <div class="announcement ">
+                        <span style="color: #fff;background-color: #452277; border-right: 1px solid #fff;  height: 40px;   width: 45px;padding: 7px;"><i class="fa fa-bullhorn" aria-hidden="true" style="font-size:28px;"></i></span>
+                        <marquee width="100%" direction="Left" onmouseover="this.stop();" onmouseout="this.start();">
+                            <p class="text-light mb-0">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+                                nemo numquam illo ipsum quia qui quod voluptatibus illum,
+                                possimus alias officia odio aliquid! Veniam cum, architecto
+                                tenetur aspernatur error inventore?
+                            </p>
+                        </marquee>
+                    </div>
+
+
+  <!--  END SIDEBAR  -->
+
+  <style>
+    .icon>span>img {
+      width: 70px !important;
+      height: 70px !important;
+      top: 10px;
+      position: relative;
+      left: 10px;
+    }
+
+    body.dark .widget.widget-card-five .account-box .info-box .icon:before {
+      background: #000000 !important;
+      left: -50px;
+      border-right: 6px solid #ff9200;
+
+    }
+
+
+    body.dark .widget.widget-card-five .account-box .info-box .balance-info h6 {
+      font-size: 21px;
+      color: #ff9200;
+      font-weight: 700;
+    }
+
+    body.dark .widget.widget-card-five {
+      box-shadow: rgba(151, 151, 151, 0.2) 0px 8px 24px;
+      border-bottom: 3px solid #fff;
+      /* background-color: #1b2e4b; */
+
+
+
+    }
+
+    body.dark .widget.widget-card-four {
+      box-shadow: rgba(151, 151, 151, 0.2) 0px 8px 24px;
+      border-bottom: 3px solid #fff;
+
+    }
+
+    body.dark .widget-card-one {
+      box-shadow: rgba(151, 151, 151, 0.2) 0px 8px 24px;
+      border-bottom: 3px solid #fff;
+    }
+  </style>
+  <!--  END BREADCRUMBS  -->
+  <style>
+    .packages-name {
+      background-image: linear-gradient(to right, rgb(15, 23, 42), rgb(88, 28, 135), rgb(15, 23, 42));
+      height: 100px;
+      width: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-family: sans-serif;
+      font-size: 36px;
+      border-radius: 35%;
+      border: 1px solid #fff;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      /* background-image: linear-gradient(rgb(69, 34, 119), rgb(144, 97, 209)); */
+    }
+
+    .packages-name:hover {
+      color: greenyellow;
+      border: 1px solid greenyellow;
+    }
+
+    .packages-name:active {
+      color: greenyellow;
+      border: 1px solid greenyellow;
+    }
+
+    .packages_active {
+      color: greenyellow;
+      border: 1px solid greenyellow;
+    }
+
+    @media (max-width:992px) {
+      .packages-name {
+        height: 80px;
+        width: 80px;
+        font-size: 32px;
+      }
+    }
+  </style>
+  <section class="mt-4">
+
+    <div class="row layout-top-spacing">
+      <div class="col-xl-4 d-block d-xl-none">
+        <div class="row">
+          <div class="col-xl-12 col-12 layout-spacing">
+            <div class="widget widget-card-four">
+              <div class="widget-content">
+                <div class="w-header">
+                  <div class="w-info">
+                    <h6 class="value">Total Income</h6>
+                  </div>
+
+                </div>
+
+                <div class="w-content">
+
+                  <div class="w-info">
+                    <p class="value">$ 45,141 </p>
+                  </div>
+
+                </div>
+
+                <div class="w-progress-stats">
+                  <div class="progress">
+                    <div class="progress-bar bg-gradient-secondary" role="progressbar" style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+
+                  <div class="">
+                    <div class="w-icon">
+                      <p>57%</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-12 col-12 layout-spacing">
+            <div class="widget widget-card-one">
+              <div class="widget-content">
+                <div class="media">
+                  <div class="w-img">
+                    <img
+                      src="src/assets/img/profile-30.png"
+                      alt="avatar" />
+                  </div>
+                  <div class="media-body">
+                    <h6> US0234FS</h6>
+                    <p class="meta-date-time">18 May 2025</p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <p class="mb-2" style="font-weight: 900;font-size: 15px;color: #fff;">Income Limit </p>
+                  <p class="text-end mb-2">$4560.00</p>
+                </div>
+
+                <div class="d-flex">
+                  <p class="mb-2" style="font-weight: 900;font-size: 15px;color: #fff;"> Current Package</p>
+                  <p class="text-end mb-2">$0160.00</p>
+                </div>
+
+                <div class="d-flex">
+                  <p class="mb-2" style="font-weight: 900;font-size: 15px;color: #fff;"> Total Member</p>
+                  <p class="text-end mb-2">124</p>
+                </div>
+
+                <div class="d-flex">
+                  <p class="mb-4" style="font-weight: 900;font-size: 15px;color: #fff;"> Direct Member</p>
+                  <p class="text-end mb-2">1</p>
+                </div>
+
+                <div class="w-action">
+                  <div class="card-like">
+                    <span>http://adusdtbank.live/register.aspx?Sponsor=AD100001</span>
+                  </div>
+
+                </div>
+
+                <div class="w-action justify-content-end">
+
+
+                  <div class="read-more">
+                    <a href=""> Copy
+                      <i class="fa fa-clone" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row mb-2">
+      <div class="co-lg-12">
+        <h5>Packages</h5>
+      </div>
+    </div>
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+      <div class="">
+        <a href="index.html" class="a1">
+          <div class="packages-icon">
+            <h1 class="packages-name">A1</h1>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="">
+        <a href="">
+          <div class="packages-icon">
+            <h1 class="packages-name">A2</h1>
+          </div>
+        </a>
+      </div>
+
+      <div class="">
+        <div class="packages-icon">
+          <h1 class="packages-name">A3</h1>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="packages-icon">
+          <h1 class="packages-name">A4</h1>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="packages-icon">
+          <h1 class="packages-name">A5</h1>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="packages-icon">
+          <h1 class="packages-name">A6</h1>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="packages-icon">
+          <h1 class="packages-name">A7</h1>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="packages-icon">
+          <h1 class="packages-name">A8</h1>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="packages-icon">
+          <h1 class="packages-name">A9</h1>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="packages-icon">
+          <h1 class="packages-name">A10</h1>
+        </div>
+      </div>
+
+
+      <div class="">
+        <div class="packages-icon">
+          <h1 class="packages-name">A11</h1>
+        </div>
+      </div>
+
+
+      <div class="">
+        <div class="packages-icon">
+          <h1 class="packages-name">A12</h1>
+        </div>
+      </div>
+
+
+      <div class="">
+        <div class="packages-icon">
+          <h1 class="packages-name">A13</h1>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="packages-icon">
+          <h1 class="packages-name">A14</h1>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="packages-icon">
+          <h1 class="packages-name">A15</h1>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="row layout-top-spacing">
+    <div class="col-xl-8">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
+          <div class="widget widget-card-five">
+            <div class="widget-content">
+              <div class="account-box">
+                <div class="info-box">
+                  <div class="icon">
+                    <span>
+                      <img
+                        src="src/assets/img/1.png"
+                        alt="money-bag" />
+                    </span>
+                  </div>
+
+                  <div class="balance-info">
+                    <h6 class="mb-2">Refferal Income</h6>
+                    <p>$123.00</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
+          <div class="widget widget-card-five">
+            <div class="widget-content">
+              <div class="account-box">
+                <div class="info-box">
+                  <div class="icon">
+                    <span>
+                      <img
+                        src="src/assets/img/3.png"
+                        alt="money-bag" />
+                    </span>
+                  </div>
+
+                  <div class="balance-info">
+                    <h6 class="mb-2">Upgrade Bonus</h6>
+                    <p>$0.00</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
+          <div class="widget widget-card-five">
+            <div class="widget-content">
+              <div class="account-box">
+                <div class="info-box">
+                  <div class="icon">
+                    <span>
+                      <img
+                        src="src/assets/img/4.png"
+                        alt="money-bag" />
+                    </span>
+                  </div>
+
+                  <div class="balance-info">
+                    <h6 class="mb-2">Level Income</h6>
+                    <p>$123.42</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
+          <div class="widget widget-card-five">
+            <div class="widget-content">
+              <div class="account-box">
+                <div class="info-box">
+                  <div class="icon">
+                    <span>
+                      <img
+                        src="src/assets/img/2.png"
+                        alt="money-bag" />
+                    </span>
+                  </div>
+
+                  <div class="balance-info">
+                    <h6 class="mb-2">Divident Bonus</h6>
+                    <p>$4045.42</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
+          <div class="widget widget-card-five">
+            <div class="widget-content">
+              <div class="account-box">
+                <div class="info-box">
+                  <div class="icon">
+                    <span>
+                      <img
+                        src="src/assets/img/5.png"
+                        alt="money-bag" />
+                    </span>
+                  </div>
+
+                  <div class="balance-info">
+                    <h6 class="mb-2">Royalty Income</h6>
+                    <p>$534.42</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
+          <div class="widget widget-card-five">
+            <div class="widget-content">
+              <div class="account-box">
+                <div class="info-box">
+                  <div class="icon">
+                    <span>
+                      <img
+                        src="src/assets/img/6.png"
+                        alt="money-bag" />
+                    </span>
+                  </div>
+
+                  <div class="balance-info">
+                    <h6 class="mb-2">Reward Fund</h6>
+                    <p>$4141.42</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
+          <div class="widget widget-card-five">
+            <div class="widget-content">
+              <div class="account-box">
+                <div class="info-box">
+                  <div class="icon">
+                    <span>
+                      <img
+                        src="src/assets/img/7.png"
+                        alt="money-bag" />
+                    </span>
+                  </div>
+
+                  <div class="balance-info">
+                    <h6 class="mb-2">Hold Income</h6>
+                    <p>$214.0</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 d-none d-xl-block">
+      <div class="row">
+        <div class="col-xl-12 col-12 layout-spacing">
+          <div class="widget widget-card-four">
+            <div class="widget-content">
+              <div class="w-header">
+                <div class="w-info">
+                  <h6 class="value">Total Income</h6>
+                </div>
+
+              </div>
+
+              <div class="w-content">
+
+                <div class="w-info">
+                  <p class="value">$ 45,141 </p>
+                </div>
+
+              </div>
+
+              <div class="w-progress-stats">
+                <div class="progress">
+                  <div class="progress-bar bg-gradient-secondary" role="progressbar" style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <div class="">
+                  <div class="w-icon">
+                    <p>57%</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-12 col-12 layout-spacing">
+          <div class="widget widget-card-one">
+            <div class="widget-content">
+              <div class="media">
+                <div class="w-img">
+                  <img
+                    src="src/assets/img/profile-30.png"
+                    alt="avatar" />
+                </div>
+                <div class="media-body">
+                  <h6> US0234FS</h6>
+                  <p class="meta-date-time">18 May 2025</p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <p class="mb-2" style="font-weight: 900;font-size: 15px;color: #fff;">Income Limit </p>
+                <p class="text-end mb-2">$4560.00</p>
+              </div>
+
+              <div class="d-flex">
+                <p class="mb-2" style="font-weight: 900;font-size: 15px;color: #fff;"> Current Package</p>
+                <p class="text-end mb-2">$0160.00</p>
+              </div>
+
+              <div class="d-flex">
+                <p class="mb-2" style="font-weight: 900;font-size: 15px;color: #fff;"> Total Member</p>
+                <p class="text-end mb-2">124</p>
+              </div>
+
+              <div class="d-flex">
+                <p class="mb-4" style="font-weight: 900;font-size: 15px;color: #fff;"> Direct Member</p>
+                <p class="text-end mb-2">1</p>
+              </div>
+
+              <div class="w-action">
+                <div class="card-like">
+                  <span>http://adusdtbank.live/register.aspx?Sponsor=AD100001</span>
+                </div>
+
+              </div>
+
+              <div class="w-action justify-content-end">
+
+
+                <div class="read-more">
+                  <a href=""> Copy
+                    <i class="fa fa-clone" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--  BEGIN FOOTER  -->
+  <div class="footer-wrapper">
+    <div class="footer-section f-section-1">
+      <p class="">
+        Copyright © <span class="dynamic-year">2025</span>
+        <a target="_blank" href="#">ADUSDT BANK</a>, All rights reserved.
+      </p>
+    </div>
+
+  </div>
+  <!--  END FOOTER  -->
+  </div>
+  <!--  END CONTENT AREA  -->
+  </div>
+  <!-- END MAIN CONTAINER -->
+
+  <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+  <script src="src/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="src/plugins/src/mousetrap/mousetrap.min.js"></script>
+  <script src="src/plugins/src/waves/waves.min.js"></script>
+  <script src="layouts/vertical-dark-menu/app.js"></script>
+  <!-- END GLOBAL MANDATORY SCRIPTS -->
+
+  <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+  <script src="src/plugins/src/apex/apexcharts.min.js"></script>
+  <script src="src/assets/js/dashboard/dash_1.js"></script>
+  <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+
+  <script>
+    $(".a1").addClass("packages_active");
+  </script>
+</body>
+
+</html>
