@@ -267,7 +267,7 @@
                             data-bs-parent="#accordionExample">
                             <li>
                                 <a href="./component-tabs.html"> My Direct </a>
-                            </li>
+                 b                </li>
                             <li>
                                 <a href="./component-accordion.html"> My Team </a>
                             </li>
