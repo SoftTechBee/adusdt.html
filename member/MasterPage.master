@@ -197,25 +197,25 @@
                             id="apps"
                             data-bs-parent="#accordionExample">
                             <li>
-                                <a href="referral_income.html"> Referral Income </a>
+                                <a href="rptdrectIncome.aspx"> Referral Income </a>
                             </li>
                             <li>
-                                <a href="upgrade_bonus.html"> Upgrade Bonus </a>
+                                <a href="rptUpgradeIncome.aspx"> Upgrade Bonus </a>
                             </li>
                             <li>
-                                <a href="level_income.html"> Level Income </a>
+                                <a href="rptLevelIncome.aspx"> Level Income </a>
                             </li>
                             <li>
-                                <a href="dividend_bonus.html"> Dividend Bonus </a>
+                                <a href="rptDividentIncome.aspx"> Dividend Bonus </a>
                             </li>
                             <li>
-                                <a href="royalty_income.html"> Royalty Income </a>
+                                <a href="rptroyaltyIncome.aspx"> Royalty Income </a>
                             </li>
                             <li>
-                                <a href=""> Reward Fund </a>
+                                <a href="rptrewardIncome.aspx"> Reward Fund </a>
                             </li>
                             <li>
-                                <a href="./app-contacts.html"> Hold Income </a>
+                                <a href="holdIncome.aspx"> Hold Income </a>
                             </li>
                         </ul>
                     </li>
@@ -266,16 +266,16 @@
                             id="components"
                             data-bs-parent="#accordionExample">
                             <li>
-                                <a href="./component-tabs.html"> My Direct </a>
-                 b                </li>
+                                <a href="direct.aspx"> My Direct </a>
+                          </li>
                             <li>
-                                <a href="./component-accordion.html"> My Team </a>
+                                <a href="rptdwonline.aspx"> My Team </a>
                             </li>
                             <li>
-                                <a href="./component-modal.html"> Level Wise Team </a>
+                                <a href="rptlevelwiseteam.aspx"> Level Wise Team </a>
                             </li>
                             <li>
-                                <a href="./component-cards.html"> Tree View </a>
+                                <a href="#"> Tree View </a>
                             </li>
                         </ul>
                     </li>
@@ -324,17 +324,17 @@
                             id="elements"
                             data-bs-parent="#accordionExample">
                             <li>
-                                <a href="./element-alerts.html"> Support </a>
+                                <a href="support.aspx"> Support </a>
                             </li>
                             <li>
-                                <a href="./element-avatar.html"> Support Response </a>
+                                <a href="supportlist.aspx"> Support Response </a>
                             </li>
                         </ul>
                     </li>
 
                     <li class="menu">
                         <a
-                            href="#dashboard"
+                            href="logout.aspx"
                             data-bs-toggle="collapse"
                             aria-expanded="true"
                             class="dropdown-toggle">
@@ -346,7 +346,7 @@
                                 <path
                                     d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                                 <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                                </svg>
+                               </svg>
                                 <span>Logout</span>
                             </div>
                         </a>
